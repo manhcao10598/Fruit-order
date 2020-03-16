@@ -25,11 +25,12 @@ public class TestMain {
         System.out.println("name fruit");
         String name = sc.nextLine();
         System.out.println("price");
-        String price = sc.nextLine();
+        Double price = sc.nextDouble();
         System.out.println("quantity");
-        String quantity = sc.nextLine();
+        double quantity = sc.nextDouble();
+        System.out.println("");
 
-        Fruit f = new Fruit(id, name, price, quantity);
+        Fruit f = new Fruit(id, name, price, quantity,"VN");
         fr.addFruit(f);
 
         for (Fruit s : fr._listFruit) {

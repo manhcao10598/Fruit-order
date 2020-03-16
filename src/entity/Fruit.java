@@ -12,17 +12,19 @@ package entity;
 public class Fruit {
     private String id;
     private String name;
-    private String price;
-    private String quantity;
+    private Double price;
+    private double quantity;
+    private String origin;
 
     public Fruit() {
     }
 
-    public Fruit(String id, String name, String price, String quantity) {
+    public Fruit(String id, String name, Double price, double quantity, String origin) {
         this.id = id;
         this.name = name;
         this.price = price;
         this.quantity = quantity;
+        this.origin = origin;
     }
 
     public String getId() {
@@ -41,21 +43,31 @@ public class Fruit {
         this.name = name;
     }
 
-    public String getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(Double price) {
         this.price = price;
     }
 
-    public String getQuantity() {
+    public double getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(String quantity) {
+    public void setQuantity(double quantity) {
         this.quantity = quantity;
     }
+
+    public String getOrigin() {
+        return origin;
+    }
+
+    public void setOrigin(String origin) {
+        this.origin = origin;
+    }
+
+    
     
     @Override
     public String toString(){
